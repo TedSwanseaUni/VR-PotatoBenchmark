@@ -50,4 +50,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Tests/Scenes/108 - FillRate (Terrain).unity
     guid: 6103c38a3d5384201874ac2402ee2d0b
-  m_configObjects: {}
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 5a6eec534bf641a4492f1dd49c09186b,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 22afe8930ecdc5f47b3eab18b1e95c54,
+      type: 2}
