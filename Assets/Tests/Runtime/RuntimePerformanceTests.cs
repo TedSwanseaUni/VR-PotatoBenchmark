@@ -2,7 +2,7 @@
 using Unity.PerformanceTesting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.Rendering.LWRP;
+using UnityEngine.Rendering.Universal;
 using UnityEngine.TestTools;
 
 public class RuntimePerformanceTests

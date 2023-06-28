@@ -56,7 +56,7 @@ public class RunTests : MonoBehaviour
     public void RunLWRP()
     {
         int testCount = (SceneManager.sceneCountInBuildSettings - 1) / 2;
-        GraphicsSettings.renderPipelineAsset = m_RenderPipeline;
+        GraphicsSettings.defaultRenderPipeline = m_RenderPipeline;
         QualitySettings.antiAliasing = 4;
         StartCoroutine(RunTestScenes(1, testCount + 1, m_MeasureSeconds, m_SkipSeconds));
     }
@@ -65,7 +65,7 @@ public class RunTests : MonoBehaviour
     {
         int testEnd = SceneManager.sceneCountInBuildSettings;
         int testStart = (testEnd - 1) / 2;
-        GraphicsSettings.renderPipelineAsset = null;
+        GraphicsSettings.defaultRenderPipeline= null;
         QualitySettings.antiAliasing = 4;
         StartCoroutine(RunTestScenes(testStart + 1, testEnd, m_MeasureSeconds, m_SkipSeconds));
     }
